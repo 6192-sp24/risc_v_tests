@@ -262,7 +262,6 @@ int main(int argc, char* argv[]) {
         print_string("Passed test ");
         print_int(arg);
         print_string("\n\n");
-        exit2(0);
 #endif
         arg ++;
         // End evaluation
@@ -271,6 +270,7 @@ int main(int argc, char* argv[]) {
     if (runOnce == 0) printf("\nPassed all tests\n\n");
 #else
     if (runOnce == 0) print_string("Passed all tests\n\n");
+        exit2(0);
     return 0;
 #endif
 }

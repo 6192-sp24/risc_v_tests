@@ -125,10 +125,10 @@ Contents of section .text:
  0770 232cf4fc 032784fd 832744fe e344f7ee  #,...'...'D..D..
  0780 17050000 1305450c eff0dfa6 0325c4fd  ......E......%..
  0790 eff09fb3 17050000 1305c50a eff09fa5  ................
- 07a0 13050000 eff09fa1 8327c4fd 93871700  .........'......
- 07b0 232ef4fc 832704fe 63980700 93075000  #....'..c.....P.
- 07c0 0327c4fd e3dae7d6 832704fe 63980700  .'.......'..c...
- 07d0 17050000 13054508 eff0dfa1 93070000  ......E.........
+ 07a0 8327c4fd 93871700 232ef4fc 832704fe  .'......#....'..
+ 07b0 63980700 93075000 0327c4fd e3dee7d6  c.....P..'......
+ 07c0 832704fe 63980700 17050000 1305c508  .'..c...........
+ 07d0 eff05fa2 13050000 eff05f9e 93070000  .._......._.....
  07e0 13850700 8320c103 03248103 13010104  ..... ...$......
  07f0 67800000                             g...            
 Contents of section .sdata:
@@ -831,21 +831,21 @@ Disassembly of section .text:
  794:	00000517          	auipc	x10,0x0
  798:	0ac50513          	addi	x10,x10,172 # 840 <NUMTESTS+0x3c>
  79c:	a59ff0ef          	jal	x1,1f4 <print_string>
- 7a0:	00000513          	addi	x10,x0,0
- 7a4:	a19ff0ef          	jal	x1,1bc <exit2>
- 7a8:	fdc42783          	lw	x15,-36(x8)
- 7ac:	00178793          	addi	x15,x15,1
- 7b0:	fcf42e23          	sw	x15,-36(x8)
- 7b4:	fe042783          	lw	x15,-32(x8)
- 7b8:	00079863          	bne	x15,x0,7c8 <main+0x2dc>
- 7bc:	00500793          	addi	x15,x0,5
- 7c0:	fdc42703          	lw	x14,-36(x8)
- 7c4:	d6e7dae3          	bge	x15,x14,538 <main+0x4c>
- 7c8:	fe042783          	lw	x15,-32(x8)
- 7cc:	00079863          	bne	x15,x0,7dc <main+0x2f0>
- 7d0:	00000517          	auipc	x10,0x0
- 7d4:	08450513          	addi	x10,x10,132 # 854 <NUMTESTS+0x50>
- 7d8:	a1dff0ef          	jal	x1,1f4 <print_string>
+ 7a0:	fdc42783          	lw	x15,-36(x8)
+ 7a4:	00178793          	addi	x15,x15,1
+ 7a8:	fcf42e23          	sw	x15,-36(x8)
+ 7ac:	fe042783          	lw	x15,-32(x8)
+ 7b0:	00079863          	bne	x15,x0,7c0 <main+0x2d4>
+ 7b4:	00500793          	addi	x15,x0,5
+ 7b8:	fdc42703          	lw	x14,-36(x8)
+ 7bc:	d6e7dee3          	bge	x15,x14,538 <main+0x4c>
+ 7c0:	fe042783          	lw	x15,-32(x8)
+ 7c4:	00079863          	bne	x15,x0,7d4 <main+0x2e8>
+ 7c8:	00000517          	auipc	x10,0x0
+ 7cc:	08c50513          	addi	x10,x10,140 # 854 <NUMTESTS+0x50>
+ 7d0:	a25ff0ef          	jal	x1,1f4 <print_string>
+ 7d4:	00000513          	addi	x10,x0,0
+ 7d8:	9e5ff0ef          	jal	x1,1bc <exit2>
  7dc:	00000793          	addi	x15,x0,0
  7e0:	00078513          	addi	x10,x15,0
  7e4:	03c12083          	lw	x1,60(x2)
